@@ -1,17 +1,22 @@
 export default {
   global: {
-    componenteFormativo: 'NOMBRE DEL COMPONENTE FORMATIVO',
-    descripcionCurso: 'BREVE DESCRIPCIÓN',
-    imagenBannerPrincipal: require('@/assets/curso/portada/banner-princiapal.svg'),
+    componenteFormativo: 'Automatización de pruebas ',
+    descripcionCurso:
+      'En este componente formativo se resalta la importancia que tiene la automatización de pruebas para detectar fallos en el <em>software</em>. En este proceso, el <em>software</em> es sometido a pruebas 24/7, en los que se seleccionan algunos procesos para ser monitoreados y evitar pruebas manuales, por medio de herramientas de automatización.',
+    imagenBannerPrincipal: require('@/assets/curso/portada/banner-principal.png'),
     fondoBannerPrincipal: require('@/assets/curso/portada/fondo-banner-principal.png'),
     imagenesDecorativasBanner: [
       {
         clases: ['banner-principal-decorativo-1', 'd-none', 'd-lg-block'],
-        imagen: require('@/assets/curso/portada/banner-principal-decorativo-1.svg'),
+        imagen: require('@/assets/curso/portada/banner-principal-decorativo-1.png'),
       },
       {
-        clases: ['banner-principal-decorativo-2'],
-        imagen: require('@/assets/curso/portada/banner-principal-decorativo-2.svg'),
+        clases: ['banner-principal-decorativo-2', 'd-none', 'd-lg-block'],
+        imagen: require('@/assets/curso/portada/banner-principal-decorativo-2.png'),
+      },
+      {
+        clases: ['banner-principal-decorativo-3', 'd-none', 'd-lg-block'],
+        imagen: require('@/assets/curso/portada/banner-principal-decorativo-3.png'),
       },
     ],
   },
@@ -31,27 +36,30 @@ export default {
       {
         nombreRuta: 'tema1',
         numero: '1',
-        titulo: 'Titulo de primer nivel',
+        titulo: 'Entorno de pruebas',
         desarrolloContenidos: true,
         subMenu: [
           {
             numero: '1.1',
-            titulo: 'Titulo de segundo nivel',
+            titulo: 'Máquinas virtuales',
             hash: 't_1_1',
+          },
+          {
+            numero: '1.2',
+            titulo: 'Contenedores',
+            hash: 't_1_2',
+          },
+          {
+            numero: '1.3',
+            titulo: 'Dimensionamiento de pruebas de escalabilidad',
+            hash: 't_1_3',
           },
         ],
       },
-
       {
         nombreRuta: 'tema2',
         numero: '2',
-        titulo: 'Titulo de primer nivel',
-        desarrolloContenidos: true,
-      },
-      {
-        nombreRuta: 'tema3',
-        numero: '3',
-        titulo: 'Titulo de primer nivel',
+        titulo: 'Ejecución de <em>scripts</em> de pruebas',
         desarrolloContenidos: true,
       },
     ],
@@ -102,32 +110,129 @@ export default {
   },
   complementario: [
     {
-      tema: '',
-      referencia: '',
-      tipo: '',
-      link: 'https://www.google.com/',
+      tema: 'Automatización de pruebas',
+      referencia:
+        'De los santos, J. (2020). <em>Todo lo que necesitas saber antes de automatizar pruebas</em>. YouTube.',
+      tipo: 'Video',
+      link: 'https://www.youtube.com/watch?v=dGDmhbeYfWQ',
     },
     {
-      tema: '',
-      referencia: '',
-      tipo: '',
-      descarga: '/downloads/prueba.pdf',
+      tema: 'Máquinas virtuales',
+      referencia:
+        'Google Cloud LATAM. (2021). <em>Máquinas virtuales en la nube</em>. YouTube.',
+      tipo: 'Video',
+      link: 'https://www.youtube.com/watch?v=H7EAHuRbIy0',
+    },
+    {
+      tema: 'Ejecución de <em>scripts</em> de pruebas',
+      referencia:
+        'DThe QA Testing Channel. (2017). <em>¿Qué es un Script Automatizado? - en 1 minuto</em>. YouTube.',
+      tipo: 'Video',
+      link: 'https://www.youtube.com/watch?v=xt1NnslQ9MA',
     },
   ],
   glosario: [
     {
-      termino: 'Término',
-      significado: 'Texto de la definición',
+      termino: 'Atributos',
+      significado:
+        'un atributo de calidad es una propiedad medible de un sistema, que indica qué tan bien el sistema satisface las necesidades de las partes interesadas (Zapata, 2020).',
     },
     {
-      termino: '<em>Término con extranjerismo</em>',
-      significado: 'Definición',
+      termino: '<em>Docker</em>',
+      significado:
+        'el sistema de <em>software</em> de TI llamado <em>Docker</em> es la tecnología de organización en contenedores que posibilita la creación y el uso de los contenedores de Linux (RedHat, 2018).',
+    },
+    {
+      termino: '<em>Guests</em>',
+      significado:
+        'la máquina física original en que está instalada el hipervisor se llama <em>host</em>, y las VM que utilizan estos recursos se llaman <em>guests</em>. Los <em>guests</em> utilizan los recursos informáticos como la CP, la memoria y el almacenamiento, como un conjunto de medios que pueden redistribuirse fácilmente (RedHat, 2018).',
+    },
+    {
+      termino: 'Hipervisor',
+      significado:
+        'un hipervisor, conocido también como monitor de máquinas virtuales, es un proceso que crea y ejecuta máquinas virtuales. Un hipervisor permite que un ordenador host preste soporte a varias máquinas virtuales invitadas mediante el uso compartido virtual de sus recursos, como la memoria y el procesamiento (Vwware, s.f.).',
+    },
+    {
+      termino: '<em>Host</em>',
+      significado:
+        'la máquina física original en que está instalado el hipervisor se llama <em>host</em> virtualización (Redhat, s.f.).',
+    },
+    {
+      termino: 'Kernel o núcleo',
+      significado:
+        'es una parte fundamental del sistema operativo que se encarga de conceder el acceso al <em>hardware</em> de forma segura para todo el <em>software</em> que lo solicita. El Kernel es una pequeña e invisible parte del sistema operativo, pero la más importante, porque sin esta no podría funcionar. Todos los sistemas operativos tienen un <em>Kernel</em>, incluso Windows 10, pero quizá el más famoso es el <em>Kernel</em> de Linux, que ahora además está integrado en Windows 10 con sus últimas actualizaciones (Geeknetic, s.f.).',
+    },
+    {
+      termino: 'Kubernetes',
+      significado:
+        '<em>Kubernetes</em> es una plataforma portable y extensible de código abierto para administrar cargas de trabajo y servicios. <em>Kubernetes</em> facilita la automatización y la configuración declarativa. Tiene un ecosistema grande y en rápido crecimiento. El soporte, las herramientas y los servicios para <em>Kubernetes</em> están ampliamente disponibles (Kubernetes, s.f.).',
+    },
+    {
+      termino: '<em>Script</em> de prueba',
+      significado:
+        'es un conjunto de instrucciones para probar automáticamente una aplicación. Los casos de prueba se utilizan para el entorno de prueba manual. La prueba se utiliza en el entorno de prueba automatizado (Ebook online, s.f.).',
     },
   ],
   referencias: [
     {
-      referencia: '',
+      referencia:
+        'Choucair. (s.f.). <em>¿Sabes qué son los ambientes de prueba de desarrollo de software?</em>',
+      link: 'https://www.choucairtesting.com/a-day-at-the-office',
+    },
+    {
+      referencia:
+        'Ebooks online. (s.f.). <em>¿Qué es un guion de prueba? Cómo escribir con el ejemplo.</em>',
       link: '',
+    },
+    {
+      referencia:
+        'Erickson, E., Brady, G. y Olprod (2022). <em>Requisitos de dimensionamiento de hardware para entornos locales.</em> Microsoft. ',
+      link:
+        'https://docs.microsoft.com/es-es/dynamics365/fin-ops-core/fin-ops/get-started/hardware-sizing-on-premises-environments',
+    },
+    {
+      referencia: 'Kubernetes (s.f.). <em>¿Qué es Kubernetes?</em>',
+      link:
+        'https://kubernetes.io/es/docs/concepts/overview/what-is-kubernetes',
+    },
+    {
+      referencia:
+        'Geeknetic. (s.f.). <em>¿Qué es el Kernel y para qué sirve?</em>',
+      link: 'https://www.geeknetic.es/Kernel/que-es-y-para-que-sirve',
+    },
+    {
+      referencia: 'NetApp. (s.f.). <em>¿Qué son los contenedores?</em>',
+      link: 'https://www.netapp.com/es/devops-solutions/what-are-containers',
+    },
+    {
+      referencia:
+        'Myservername.com. (s.f.). <em>Los 10 mejores sitios y programas de software gratuitos para compartir archivos en 2021.</em>',
+      link:
+        'https://es.myservername.com/10-best-free-file-sharing-sites#1_Response_Time',
+    },
+    {
+      referencia:
+        'Pinchao, P. M. (2011). Propuesta para la interoperabilidad de procesos de negocios en sistemas de información hospitalarios bajo una arquitectura orientada a servicios. [Monografía para optar al título de Ingeniero en Electrónica y Telecomunicaciones, Universidad del Cauca].',
+      link: '',
+    },
+    {
+      referencia: 'RedHat (2019). <em>¿Qué es una máquina virtual?</em>',
+      link:
+        'https://www.redhat.com/es/topics/virtualization/what-is-a-virtual-machine#descripci%C3%B3n-general',
+    },
+    {
+      referencia: 'RedHat. (2018). <em>¿Qué es DOCKER?</em>',
+      link: 'https://www.redhat.com/es/topics/containers/what-is-docker',
+    },
+    {
+      referencia: 'Vmware. (s.f.). <em>¿Qué es un hipervisor?</em>',
+      link:
+        'https://www.vmware.com/latam/topics/glossary/content/hypervisor.html',
+    },
+    {
+      referencia:
+        'Zapata, M. (2019). <em>Atributos de calidad del software</em>.',
+      link: 'https://manuelzapata.co/atributos-de-calidad',
     },
   ],
   creditos: [
@@ -135,15 +240,15 @@ export default {
       titulo: 'ECOSISTEMA DE RECURSOS EDUCATIVOS DIGITALES',
       autores: [
         {
-          nombre: 'Milady Tatiana Villamil Castellanos',
-          cargo: 'Responsable del Ecosistema',
+          nombre: 'Maria Camila Garcia Santamaria',
+          cargo: 'Líder del equipo',
           centro: 'Dirección General',
         },
         {
-          nombre: 'Olga Constanza Bermúdez Jaimes',
-          cargo: 'Responsable de Línea de Producción',
+          nombre: 'Rafael Neftalí Lizcano Reyes',
+          cargo: 'Asesor metodológico y pedagógico',
           centro:
-            'Centro de Servicios de Salud - Regional Antioquia',
+            'Regional Santander - Centro Industrial del Diseño y la Manufactura',
         },
       ],
     },
@@ -151,10 +256,22 @@ export default {
       titulo: 'CONTENIDO INSTRUCCIONAL',
       autores: [
         {
-          nombre: 'Nombre responsable',
-          cargo: 'Nombre del rol',
+          nombre: 'Jonathan Guerrero Astaiza',
+          cargo: 'Experto temático',
           centro:
-            'Centro de Servicios de Salud - Regional Antioquia',
+            'Regional Cauca - Centro de teleinformática y producción industrial',
+        },
+        {
+          nombre: 'Zulema Yidney León Escobar',
+          cargo: 'Experto temático',
+          centro:
+            'Regional Cauca - Centro de teleinformática y producción industrial',
+        },
+        {
+          nombre: 'Alix Cecilia Chinchilla Rueda',
+          cargo: 'Diseñadora instruccional',
+          centro:
+            'Centro Industrial del Diseño y la Manufactura - Regional Santander',
         },
       ],
     },
@@ -162,28 +279,57 @@ export default {
       titulo: 'DISEÑO Y DESARROLLO DE RECURSOS EDUCATIVOS DIGITALES',
       autores: [
         {
-          nombre: 'Nombre responsable',
-          cargo: 'Diseñador de Contenidos Digitales',
+          nombre: 'Francisco José Lizcano Reyes',
+          cargo: 'Responsable del equipo',
           centro:
-            'Centro de Servicios de Salud - Regional Antioquia',
+            'Regional Santander - Centro industrial del diseño y la manufactura',
         },
         {
-          nombre: 'Nombre responsable',
-          cargo: 'Desarrollador Fullstack',
-          centro:
-            'Centro de Servicios de Salud - Regional Antioquia',
+          nombre: 'Leyson Fabian Castaño Perez',
+          cargo: 'Soporte organizacional',
+          centro: 'Regional Tolima - Centro de comercio y servicios',
         },
         {
-          nombre: 'Nombre',
-          cargo: 'Animador y Producción audiovisual',
+          nombre: 'José Jaime Luis Tang Pinzón',
+          cargo: 'Diseño web y Producción Audiovisual',
           centro:
-            'Centro de Servicios de Salud - Regional Antioquia',
+            'Regional Santander - Centro industrial del diseño y la manufactura',
         },
         {
-          nombre: 'Nombre',
-          cargo: 'Actividad Didáctica',
+          nombre: 'Juan Daniel Polanco Muñoz',
+          cargo: 'Diseño web y Producción Audiovisual',
           centro:
-            'Centro de Servicios de Salud - Regional Antioquia',
+            'Regional Santander - Centro industrial del diseño y la manufactura',
+        },
+        {
+          nombre: 'Luis Gabriel Urueta Alvarez',
+          cargo: 'Diseño web y Producción Audiovisual',
+          centro:
+            'Regional Santander - Centro industrial del diseño y la manufactura',
+        },
+        {
+          nombre: 'Nelson Iván Vera Briceño',
+          cargo: 'Diseño web y Producción Audiovisual',
+          centro:
+            'Regional Santander - Centro industrial del diseño y la manufactura',
+        },
+        {
+          nombre: 'Wilson Andres Arenales Cáceres',
+          cargo: 'Diseño web y Producción Audiovisual',
+          centro:
+            'Regional Santander - Centro industrial del diseño y la manufactura',
+        },
+        {
+          nombre: 'Luis Gabriel Urueta Alvarez',
+          cargo: 'Desarrollo Front-End',
+          centro:
+            'Regional Santander - Centro industrial del diseño y la manufactura',
+        },
+        {
+          nombre: 'Rafael Augusto Mantilla',
+          cargo: 'Revisor de contenidos',
+          centro:
+            'Regional Santander - Centro industrial del diseño y la manufactura',
         },
       ],
     },
@@ -191,29 +337,10 @@ export default {
       titulo: 'VALIDACIÓN RECURSO EDUCATIVO DIGITAL',
       autores: [
         {
-          nombre: 'Luis Gabriel Urueta Alvarez',
-          cargo: 'Validador de Recursos Educativos Digitales',
-          centro:
-            'Centro de Servicios de Salud - Regional Antioquia',
+          nombre: 'Milady Tatiana Villamil Castellanos',
+          cargo: 'Validación de recursos',
+          centro: 'Regional Tolima - Centro de comercio y servicios',
         },
-        {
-          nombre: 'Jaime Hernan Tejada',
-          cargo: 'Validador de Recursos Educativos Digitales',
-          centro:
-            'Centro de Servicios de Salud - Regional Antioquia',
-        },
-        {
-          nombre: 'Daniel Ricardo Mutis Gómez',
-          cargo: 'Evaluador para contenidos inclusivos y accesibles',
-          centro:
-            'Centro de Servicios de Salud - Regional Antioquia',
-        },
-        {
-          nombre: 'Margarita Marcela Medrano',
-          cargo: 'Evaluador para contenidos inclusivos y accesibles',
-          centro:
-            'Centro de Servicios de Salud - Regional Antioquia',
-        }
       ],
     },
   ],
