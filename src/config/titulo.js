@@ -1,1 +1,1 @@
-module.exports = 'Automatización de pruebas '
+module.exports = 'Automatización de pruebas'
