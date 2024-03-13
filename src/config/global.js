@@ -240,15 +240,15 @@ export default {
       titulo: 'ECOSISTEMA DE RECURSOS EDUCATIVOS DIGITALES',
       autores: [
         {
-          nombre: 'Maria Camila Garcia Santamaria',
-          cargo: 'Líder del equipo',
+          nombre: 'Milady Tatiana Villamil Castellanos',
+          cargo: 'Líder del Ecosistema',
           centro: 'Dirección General',
         },
         {
-          nombre: 'Rafael Neftalí Lizcano Reyes',
-          cargo: 'Asesor metodológico y pedagógico',
+          nombre: 'Olga Constanza Bermudez Jaimes',
+          cargo: 'Responsable de Línea de Producción',
           centro:
-            'Regional Santander - Centro Industrial del Diseño y la Manufactura',
+            'Centro de Formación Centro de Servicios de Salud - Regional Antioquia',
         },
       ],
     },
@@ -256,22 +256,15 @@ export default {
       titulo: 'CONTENIDO INSTRUCCIONAL',
       autores: [
         {
-          nombre: 'Jonathan Guerrero Astaiza',
+          nombre: 'José Luis Bastidas Pérez',
           cargo: 'Experto temático',
           centro:
-            'Regional Cauca - Centro de teleinformática y producción industrial',
+            'Centro de Teleinformática y Producción Industrial - Regional Cauca',
         },
         {
-          nombre: 'Zulema Yidney León Escobar',
-          cargo: 'Experto temático',
-          centro:
-            'Regional Cauca - Centro de teleinformática y producción industrial',
-        },
-        {
-          nombre: 'Alix Cecilia Chinchilla Rueda',
-          cargo: 'Diseñadora instruccional',
-          centro:
-            'Centro Industrial del Diseño y la Manufactura - Regional Santander',
+          nombre: 'Ana Catalina Córdoba Sus',
+          cargo: 'Evaluadora Instruccional',
+          centro: 'Centro de Servicios de Salud - Regional Antioquia',
         },
       ],
     },
@@ -279,57 +272,46 @@ export default {
       titulo: 'DISEÑO Y DESARROLLO DE RECURSOS EDUCATIVOS DIGITALES',
       autores: [
         {
-          nombre: 'Francisco José Lizcano Reyes',
-          cargo: 'Responsable del equipo',
+          nombre: 'Blanca Flor Tinoco Torres',
+          cargo: 'Diseñador de Contenidos Digitales',
           centro:
-            'Regional Santander - Centro industrial del diseño y la manufactura',
+            'Centro de Formación Centro de Servicios de Salud - Regional Antioquia',
         },
         {
-          nombre: 'Leyson Fabian Castaño Perez',
-          cargo: 'Soporte organizacional',
-          centro: 'Regional Tolima - Centro de comercio y servicios',
+          nombre: 'Luis Jesús Pérez Madariaga',
+          cargo: 'Desarrollador Fullstack',
+          centro:
+            'Centro de Formación Centro de Servicios de Salud - Regional Antioquia',
         },
         {
-          nombre: 'José Jaime Luis Tang Pinzón',
-          cargo: 'Diseño web y Producción Audiovisual',
+          nombre: 'Edgar Mauricio Cortés García',
+          cargo: 'Actividad Didáctica',
           centro:
-            'Regional Santander - Centro industrial del diseño y la manufactura',
+            'Centro de Formación Centro de Servicios de Salud - Regional Antioquia',
         },
         {
-          nombre: 'Juan Daniel Polanco Muñoz',
-          cargo: 'Diseño web y Producción Audiovisual',
+          nombre: 'Pendiente',
+          cargo: 'Intérprete Lenguaje de señas',
           centro:
-            'Regional Santander - Centro industrial del diseño y la manufactura',
+            'Centro de Formación Centro de Servicios de Salud - Regional Antioquia',
         },
         {
-          nombre: 'Luis Gabriel Urueta Alvarez',
-          cargo: 'Diseño web y Producción Audiovisual',
+          nombre: 'Pendiente',
+          cargo: 'Storyboard e Ilustración',
           centro:
-            'Regional Santander - Centro industrial del diseño y la manufactura',
+            'Centro de Formación Centro de Servicios de Salud - Regional Antioquia',
         },
         {
-          nombre: 'Nelson Iván Vera Briceño',
-          cargo: 'Diseño web y Producción Audiovisual',
+          nombre: 'Pendiente',
+          cargo: 'Animador y Productor Multimedia',
           centro:
-            'Regional Santander - Centro industrial del diseño y la manufactura',
+            'Centro de Formación Centro de Servicios de Salud - Regional Antioquia',
         },
         {
-          nombre: 'Wilson Andres Arenales Cáceres',
-          cargo: 'Diseño web y Producción Audiovisual',
+          nombre: 'Pendiente',
+          cargo: 'Locución',
           centro:
-            'Regional Santander - Centro industrial del diseño y la manufactura',
-        },
-        {
-          nombre: 'Luis Gabriel Urueta Alvarez',
-          cargo: 'Desarrollo Front-End',
-          centro:
-            'Regional Santander - Centro industrial del diseño y la manufactura',
-        },
-        {
-          nombre: 'Rafael Augusto Mantilla',
-          cargo: 'Revisor de contenidos',
-          centro:
-            'Regional Santander - Centro industrial del diseño y la manufactura',
+            'Centro de Formación Centro de Servicios de Salud - Regional Antioquia',
         },
       ],
     },
@@ -337,9 +319,28 @@ export default {
       titulo: 'VALIDACIÓN RECURSO EDUCATIVO DIGITAL',
       autores: [
         {
-          nombre: 'Milady Tatiana Villamil Castellanos',
-          cargo: 'Validación de recursos',
-          centro: 'Regional Tolima - Centro de comercio y servicios',
+          nombre: 'Luis Gabriel Urueta Álvarez',
+          cargo: 'Validador de Recursos Educativos Digitales',
+          centro:
+            'Centro de Formación Centro de Servicios de Salud - Regional Antioquia',
+        },
+        {
+          nombre: 'Jaime Hernán Tejada Llano',
+          cargo: 'Validador de Recursos Educativos Digitales',
+          centro:
+            'Centro de Formación Centro de Servicios de Salud - Regional Antioquia',
+        },
+        {
+          nombre: 'Margarita Marcela Medrano Gómez',
+          cargo: 'Evaluador para Contenidos Inclusivos y Accesibles',
+          centro:
+            'Centro de Formación Centro de Servicios de Salud - Regional Antioquia',
+        },
+        {
+          nombre: 'Daniel Ricardo Mutis Gómez',
+          cargo: 'Evaluador para Contenidos Inclusivos y Accesibles',
+          centro:
+            'Centro de Formación Centro de Servicios de Salud - Regional Antioquia',
         },
       ],
     },

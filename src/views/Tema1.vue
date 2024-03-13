@@ -104,6 +104,36 @@
     
     p.mt-4(data-aos="fade-left") Estás máquinas pueden estar aisladas del resto del sistema, pero también pueden coexistir en una misma computadora como un servidor, por lo cual se mencionan dos tipos de hipervisores:
 
+    .row.mt-4
+      .col-lg-4.mb-4.mb-lg-0(data-aos="fade-left")
+        figure.m-auto.col-7.col-md-6.col-lg-12
+          img(src="@/assets/curso/tema1/12.svg")
+      .col-lg-8(data-aos="fade-right")
+        AcordionA.acordion1(tipo="a" clase-tarjeta="tarjeta tarjeta--azul")
+          .row(titulo="Tipo 1")
+            p Interactúa directamente en equipos que no tienen ningún tipo de sistema operativo y gestiona el computador con el #[em hardware] como las KVM (#[em Kernel Virtual Machine]) que trabajan directamente con el kernel de Linux.
+          .row(titulo="Tipo 2")
+            p El hipervisor se encuentra alojado en una máquina de host y de ahí mismo se programan sus recursos; luego, se ejecutan en el sistema de #[em hardware]. Dos ejemplos de hipervisores de este tipo son: VMware Workstation y Oracle VirtualBox.
+    
+    p.mt-4(data-aos="fade-right") De acuerdo con lo que se ha expuesto, es posible preguntar: #[span.text-white.ps-1.pe-1(style="background-color:#273A89;") ¿por qué utilizar las máquinas virtuales?]
+    p(data-aos="fade-left") Actualmente, estas máquinas son muy populares en las empresas, porque influyen sustancialmente en el factor económico; en este sentido, evitan invertir en más costos para compra de #[em hardware], teniendo en cuenta que es posible aprovechar las bondades de las MV y utilizar una misma máquina, en la que se incorporen varios servidores, utilizando los recursos #[em hardware] para optimizar el rendimiento. Asimismo, su implementación permite la conmutación de la información en catástrofes, sin incurrir en gastos adicionales.
+    p(data-aos="fadde-right") Se debe tener en cuenta lo siguiente:
+    .row.mt-4
+      .col-lg-10(data-aos="fade-right")
+        .p-4(style="background-color:#DCECFE;border-radius:12px;")
+          .row
+            .col-auto(style="place-self:center;")
+              figure
+                img(src="@/assets/curso/tema1/13.svg")
+            .col(style="place-self:center;")
+              p.mb-0 Las máquinas virtuales generan un entorno aislado de manera que lo que ocurre en este entorno no infiere con el resto de la máquina o #[em host]. En los entornos de desarrollo son muy utilizadas para probar aplicaciones nuevas sin que estas afecten el correcto funcionamiento de otras MV y en sí del #[em hardware] donde se encuentran alojadas.
+        p.mt-4 Es muy importante que se considere el #[strong(style="color:#1682FB;") dimensionamiento] cuando se operan las máquinas virtuales, debido a que este es clave para definir el tamaño de nuestra virtualización y el alcance que se le va a dar para que el proyecto tenga la mejor respuesta a los usuarios. Por ello, se debe tener presente que si se realiza un cálculo de dimensionamiento sin datos, los resultados pueden ser inexactos; en este sentido se aconseja hacer este proceso con una carga de datos máxima, con una periodicidad de una hora y, lo más importante, generar una caracterización o perfil de una transacción. Por este motivo, se insiste en determinar el volumen máximo de transacciones por hora o, en el caso de existir varios momentos, se necesitará detallarlos y especificarlos para obtener un dimensionamiento adecuado.
+      .col-lg-2.d-none.d-lg-block(data-aos="fade-left")
+        figure
+          img(src="@/assets/curso/tema1/14.svg")
+    
+    p.mt-4(data-aos="fade-right") De acuerdo con lo que se ha tratado, es necesario tener presente que cuando se establece la carga que se realiza a una infraestructura, es importante entender algunos factores que intervienen en ello:
+
 
 
 
@@ -157,4 +187,21 @@ export default {
   background-color: #273A89 !important
 .cont_hover_1:hover *
   color: #fff !important
+.acordion1 .acordion__accion__btn--b, .acordion2 .acordion__accion__btn--b
+  border: 1px solid #111e61
+  background-color: #FFCE00
+  border-color: #FFCE00
+  box-shadow: 0px 0px 10px rgba(0,0,0,.2)
+.acordion1 .tarjeta--azul
+  background-color: #DCECFE !important
+.acordion1 .tarjeta.tarjeta--azul.acordion__activo
+  background-color: #E1F6EF !important
+.acordion1 .acordion__accion__btn--a
+  background-color: #FFCE00
+.acordion2 .tarjeta--azul
+  background-color: #E1F6EF !important
+.acordion2 .tarjeta.tarjeta--azul.acordion__activo
+  background-color: #DCECFE !important
+.acordion2 .acordion__accion__btn--a
+  background-color: #FFCE00
 </style>
