@@ -5,7 +5,7 @@
     .titulo-principal.color-acento-contenido(data-aos="flip-up")
       .titulo-principal__numero
         span 2
-      h1 
+      h1 Ejecución de #[em scripts] de pruebas
     
    
 
